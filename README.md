@@ -1,2 +1,2 @@
-# Belly-Buton-Biodiversity
+# Belly-Button-Biodiversity
 Javascript, Plotly
