@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<body style="background-color: rgb(182, 181, 181);">
+
+  <div class="container">
+    <div class="row">
+      <div class="colxl-12 col-lg-12 col-md-12 color-sm-12 color-xs-12 jumbotron text-center" ; background-size:100%; color: black" >
+        <h1 style="font-family: serif; color: #4781b4"><b>Belly Buton Biodiversity Dashboard</b></h1>
+        <p><b>Use the interactive charts below to explore the dataset </b></p>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-xs-4">
+        <div class="well" style="background-color: #4781b4; color: whitesmoke; border-color: #4781b4">
+          <h5>Test Subject ID No.:</h4>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+        <p>This Bar graph shows the Top 10 Bacteria Cultures found in each subject.</p>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+        <p class=text-center>This Gauge Chart shows the frequency how often a subject washes their Belly Button per Week..</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <p class=text-center>This Bubble Chart shows every bacteria that exists within the selected subjets's Belly Button.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-12" style="margin-top:20pt"></div>
+  </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-graphviz/5.0.2/d3-graphviz.min.js" integrity="sha512-4XdYzhPXKzS9jBDv85W+sPv270Czbj0REj7ekQuQwsqle7EBC8zm7maE3ZsV14SCGrA9wOTRjxQF1N0fQxjN1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="samples.json"></script>
+  <script src="charts.js"></script>
+ 
+
+</body>
+
+</html>
