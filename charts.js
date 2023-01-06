@@ -119,7 +119,7 @@ function buildCharts(sample) {
       text : otuLabel,
       hoverinfo: "x+y+text",
       mode: "markers",
-      marker: {size: values, color: otuID, coloscale: "Earth"}
+      marker: {size: values, color: otuID, colorscale: "Earth"}
     }];
     
     // Deliverable 2: 2. Create the layout for the bubble chart.
@@ -129,17 +129,17 @@ function buildCharts(sample) {
         xaxis: {
           title: `OTU ID`
         },
-        height: 500,
-        width: 1200,
+        height: 480,
+        width: 1100,
       hovermode: "closest",
-      paper_bgcolor : "lightsteelblue"
+      paper_bgcolor : "lightblue"
     };
     // Deliverable 2: 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 
     // Deliverable 3: 4. Create the trace for the gauge chart.
     var gaugeData = [
-      {
+      { title:{text: 'Belly Button Washing Frequency<br>Scrubs per Week'},
       type: "indicator",
       value: wFreq,
       gauge: {
@@ -158,15 +158,13 @@ function buildCharts(sample) {
   ];
     // Deliverable 3: 5. Create the layout for the gauge chart.
     var gaugeLayout = {
-      title: {
-        text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week",
-        y:0.75,
-      },
+      width :480,
+      height:450,
       margin: {
-        l: 50,
-        r: 50,
-        b: 0,
-        t: 50,
+        l: 100,
+        r:100,
+        b: 100,
+        t: 100,
         pad: 50
       },
     };
