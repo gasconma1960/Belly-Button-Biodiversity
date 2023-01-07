@@ -65,7 +65,29 @@ Using your knowledge of JavaScript, Plotly, and D3.js, create a bubble chart tha
 - The `otu_labels` as the hover-text values.
 
 Your bubble chart should look like the following image:
+
 ![image](https://user-images.githubusercontent.com/112348240/211174153-7c616b0b-176e-4b04-8f1c-0ffd0bf7cc55.png)
+
+I will edit my `charts.js` file for **Deliverable 2.** Follow the comments labeled **"Deliverable 2"** in the file to add my code.
+
+Use the variables that were created in **Deliverable 1** to populate the bubble chart. Then, use the instructions below to write the code for the `trace` object, the layout, and `Plotly.newPlot()` function to create the bubble chart.
+
+1. To create the `trace` object for the bubble chart do the following:
+    - Assign the `otu_ids`, `sample_values`, and `otu_labels` to the x, y, and text properties, respectively.
+    - For the mode and marker properties, the mode is "markers" and the `marker` property is a dictionary that defines the `size`, `color`, and `colorscale` of the markers.
+
+2. To create the layout for the bubble chart, add a title, a label for the x-axis, margins, and the `hovermode` property. The `hovermode` should show the text of the bubble on the chart when you hover near that bubble.
+
+3. Lastly, use the given `Plotly.newPlot()` function to plot the `trace` object and layout.
+
+After you have completed the coding requirements, your dashboard will look like the image below when it loads for the first time, with the bar chart you created in **Deliverable 1** and the bubble chart.
+
+![image](https://user-images.githubusercontent.com/112348240/211174477-2f997b87-1f03-4b86-a750-c6e5edf75cd4.png)
+
+## **Deliverable 3:** Create a Gauge Chart
+Using my knowledge of JavaScript, Plotly, and D3.js, create a gauge chart that displays the weekly washing frequency's value, and display the value as a measure from 0-10 on the progress bar in the gauge chart when an individual ID is selected from the dropdown menu.
+
+My gauge chart should look similar to the following image:
 
 
 
