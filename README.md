@@ -25,6 +25,7 @@ In Steps 3-6, you’ll initialize variables that hold arrays for the sample that
 Make sure that you use `console.log()` to help debug any issues.
 
 1. In Step 1, we’ve provided the code for the `buildCharts()`; function that contains the argument sample, which is the sample that is selected from the dropdown menu.
+![image](https://user-images.githubusercontent.com/112348240/211175125-c19a4c0b-4014-40b1-bb32-2b1f508eb31d.png)
 
 2. In Step 2, we’ve provided the code to retrieve the `samples.json` file using the `d3.json().then()` method.
 
@@ -38,6 +39,8 @@ You can combine Steps 4 and 5 as one line of code, but make sure you use the cor
 6. In Step 6, create variables that have arrays for otu_ids, otu_labels, and sample_values.
 
 7. In Step 7, create the `yticks` for the bar chart.
+![image](https://user-images.githubusercontent.com/112348240/211175142-9eaf6462-ae85-416c-a472-b54051de7426.png)
+
 
 In Steps 8-10, create the `trace` object, the layout, and `Plotly.newPlot()` function for the horizontal bar chart.
 
@@ -89,8 +92,50 @@ Using my knowledge of JavaScript, Plotly, and D3.js, create a gauge chart that d
 
 My gauge chart should look similar to the following image:
 
+![image](https://user-images.githubusercontent.com/112348240/211174759-f1d926eb-9b9e-43ce-ad24-d7ec9b009da9.png)
+
+I will edit your `charts.js` file for **Deliverable 3.** Follow the comments labeled "Deliverable 3" in the file to add my code.
+
+1. In Step 1, create a variable that filters the metadata array for an object in the array whose id property matches the ID number from the dropdown menu that is passed into `buildCharts()` function as the argument.
+
+2. In Step 2, create a variable that holds the first sample in the array created in Step 2.
+
+3. In Step 3, create a variable that converts the washing frequency to a floating point number.
+
+4. In Step 4, create the trace object for the gauge chart.
+
+5. In Step 5, create the layout for the gauge chart making sure that it fits in the `<div></div>` tag for the gauge id.
+
+6. In Step 6, use the `Plotly.newPlot()` function to plot the `trace` object and the layout.
+
+![image](https://user-images.githubusercontent.com/112348240/211175166-969bf22c-76ac-4622-b0a2-2e767ed963ae.png)
 
 
+After I have completed the coding requirements, my dashboard look like this image when it loads for the first time, with the bar chart you created in Deliverable 1, the bubble chart created in Deliverable 2, and the gauge chart:
+
+![image](https://user-images.githubusercontent.com/112348240/211173633-dba58987-ea65-4156-ac0f-5aa6b7799b5c.png)
+
+## **Deliverable 4:** Customize the Dashboard 
+Use my knowledge of HTML and Bootstrap to customize the webpage for my dashboard.
+
+1. Customize my dashboard with three of the following:
+    - Add an image to the jumbotron.
+    ![image](https://user-images.githubusercontent.com/112348240/211175026-a7cdb941-206e-4718-9bdd-bab67ef6c67c.png)
+
+    - Add background color or a variety of compatible colors to the webpage.
+    ![image](https://user-images.githubusercontent.com/112348240/211175039-5b426b58-d53c-4c92-83f8-06c0b700e0a1.png)
+
+    - Use a custom font with contrast for the colors.
+    ![image](https://user-images.githubusercontent.com/112348240/211175055-952468a0-c953-4764-b4e4-de28a2e0b60e.png)
+    
+    - Add more information about the project as a paragraph on the page.
+    - Add information about what each graph visualizes, either under or next to each graph.
+    - Make the webpage mobile-responsive.
+    - Change the layout of the page.
+    - Add a navigation bar that allows you to select the bar or bubble chart on the page.
+2. When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and the three charts should be working according to their requirements.
+3. When a sample is selected, the dashboard should display the data in the panel and all three charts according to their requirements.
+![image](https://user-images.githubusercontent.com/112348240/211175088-e0725c0b-ad65-425d-b855-642fdf0526b8.png)
 
 
 **Module 13 Challenge**
